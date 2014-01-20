@@ -16,7 +16,7 @@
         app-model (render/consume-app-model app render-fn)]
     (app/begin app)
 
-    (p/put-message (:input app) {msg/type :inc msg/topic [:my-counter]})
+    ;; (p/put-message (:input app) {msg/type :inc msg/topic [:my-counter]})
     {:app app :app-model app-model}))
 
 
